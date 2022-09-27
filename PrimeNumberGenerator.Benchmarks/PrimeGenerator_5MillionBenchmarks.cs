@@ -5,12 +5,12 @@ using BenchmarkDotNet.Attributes;
 [MemoryDiagnoser]
 public class PrimeGenerator_5MillionBenchmarks
 {
-	private PrimeGenerator _generator;
+	private EratosthenesPrimeGenerator _generator;
 
 	[GlobalSetup]
 	public void SetUp()
 	{
-		_generator = new PrimeGenerator(86_028_122);
+		_generator = new EratosthenesPrimeGenerator(86_028_122);
 	}
 
 	[Benchmark]

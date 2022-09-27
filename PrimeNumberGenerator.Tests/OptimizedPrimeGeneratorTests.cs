@@ -6,12 +6,12 @@ using NUnit.Framework;
 [TestFixture]
 public class OptimizedPrimeGeneratorTests
 {
-	private OptimizedPrimeGenerator _primeGenerator;
+	private PrimeGenerator _primeGenerator;
 
 	[SetUp]
 	public void SetUp()
 	{
-		_primeGenerator = new OptimizedPrimeGenerator();
+		_primeGenerator = new PrimeGenerator();
 	}
 	
 	[Test]

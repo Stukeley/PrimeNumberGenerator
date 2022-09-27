@@ -6,12 +6,12 @@ using NUnit.Framework;
 [TestFixture]
 public class PrimeGeneratorTests
 {
-	private PrimeGenerator _primeGenerator;
+	private EratosthenesPrimeGenerator _eratosthenesPrimeGenerator;
 
 	[SetUp]
 	public void SetUp()
 	{
-		_primeGenerator = new PrimeGenerator();
+		_eratosthenesPrimeGenerator = new EratosthenesPrimeGenerator();
 	}
 	
 	[Test]
@@ -46,7 +46,7 @@ public class PrimeGeneratorTests
 
 	private void Test(int skip, int limit, params int[] expect)
 	{
-		int[] found = _primeGenerator.Stream().Skip(skip).Take(limit).ToArray();
+		int[] found = _eratosthenesPrimeGenerator.Stream().Skip(skip).Take(limit).ToArray();
 		Assert.AreEqual(expect, found);
 	}
 }

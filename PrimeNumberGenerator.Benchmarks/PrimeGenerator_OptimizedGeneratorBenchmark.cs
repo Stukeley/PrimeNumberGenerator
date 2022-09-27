@@ -4,12 +4,12 @@ using BenchmarkDotNet.Attributes;
 
 public class PrimeGenerator_OptimizedGeneratorBenchmark
 {
-	private OptimizedPrimeGenerator _generator;
+	private PrimeGenerator _generator;
 
 	[GlobalSetup]
 	public void SetUp()
 	{
-		_generator = new OptimizedPrimeGenerator();
+		_generator = new PrimeGenerator();
 	}
 
 	[Benchmark]

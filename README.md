@@ -21,6 +21,8 @@ The limit of numbers to check for primes (NOT the number of primes in the stream
 
 Calling `Stream()` will return an `IEnumerable<int>` that is easy to manipulate using LINQ methods, such as `Skip()` or `Take()`.
 
+Due to the usage of 'yield', the method will return one element at a time.
+
 Examples:
 
 ```csharp
@@ -29,6 +31,13 @@ var primes = new PrimeGenerator(200_000).Take(10_000).ToList();
 
 // Get the 50 millionth prime.
 var prime = new PrimeGenerator().Skip(49_999_999).Take(1).First();
+
+// Display all primes up to 100_000.
+var generator = new PrimeGenerator(100_000);
+foreach (var prime in generator.Stream())
+{
+  Console.WriteLine(prime);
+}
 ```
 
 The limit of numbers, passed as parameter to constructor, can be a great performance improvement, so if possible, you should only take as many numbers as you need.

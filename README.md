@@ -8,6 +8,10 @@ Initially started as a casual project that fulfills the requirements of [Prime S
 
 Simple to use and fast - this project is a great solution for those who need a constant stream of prime numbers with little downtime.
 
+The default **PrimeGenerator** (based on Sieve of Atkin) is capable of generating a sequence of 50 Million primes in less than 3 seconds.
+
+The **ErastothenesPrimeGenerator** (based on Sieve of Erastothenes) is significantly slower, and generates 50 Million primes in about 11 seconds.
+
 ## Prerequisites
 - .NET 6.0
 
@@ -43,3 +47,9 @@ PrimeGenerator operates using `BitArray`, which only requires 1 bit per element.
 | Erastothenes   | 50 Million        | 10.669 s| 0.0465 s| 0.0388 s| 664 B   |
 | Default   | 5 Million        | 252 ms| 0.54 ms| 0.51 ms| 868 B   |
 | Erastothenes   | 5 Million        | 9.009 s| 0.0120 s| 0.0106 s| 664 B   |
+
+## Reference
+
+- Sieve of Atkin theory by Clay Wrentz: https://medium.com/smucs/sieve-of-atkin-the-theoretical-optimization-of-prime-number-generation-e47107d61e28
+- Sieve of Atkin implementation by Ashraff Ali Wahab: https://www.codeproject.com/Articles/490085/Eratosthenes-Sundaram-Atkins-Sieve-Implementation (used in accordance with The Code Project Open License (CPOL) 1.02, available here: https://www.codeproject.com/info/cpol10.aspx)
+- Sieve of Eratosthenes optimization (multiple authors) by Algorithms for Competitive Programming: https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html

@@ -21,7 +21,7 @@ The limit of numbers to check for primes (NOT the number of primes in the stream
 
 Calling `Stream()` will return an `IEnumerable<int>` that is easy to manipulate using LINQ methods, such as `Skip()` or `Take()`.
 
-Due to the usage of 'yield', the method will return one element at a time.
+Due to the usage of `yield`, the method will return one element at a time.
 
 Examples:
 
@@ -46,7 +46,7 @@ The limit of numbers, passed as parameter to constructor, can be a great perform
 
 PrimeGenerator operates using `BitArray`, which only requires 1 bit per element. Therefore, the amount of memory to store the first 50 million primes is only about:
 
-(982_451_654 / (8 * 1024)) = 120_000 KB = **118 MB**
+982_451_654 b / (8 * 1024) = 120_000 KB = **118 MB**
 
 ## Benchmarks
 

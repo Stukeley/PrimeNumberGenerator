@@ -1,6 +1,8 @@
 # PrimeNumberGenerator
 A lightning fast Prime Number generator created with C# in .NET 6.0.
 
+Get through NuGet: https://www.nuget.org/packages/PrimeNumberGenerator
+
 ## About
 Initially started as a casual project that fulfills the requirements of [Prime Streaming (PG-13) on CodeWars](https://www.codewars.com/kata/5519a584a73e70fa570005f5), the project has since been better optimized and documented.
 

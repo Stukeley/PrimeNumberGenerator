@@ -6,6 +6,14 @@
         <Nullable>disable</Nullable>
         <AssemblyName>PrimeNumberGenerator</AssemblyName>
         <RootNamespace>PrimeNumberGenerator</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Prime Number Generator</Title>
+        <Authors>Stukeley</Authors>
+        <Description>A lightning fast Prime Number generator created with C# in .NET 6.0.</Description>
+        <PackageProjectUrl>https://github.com/Stukeley/PrimeNumberGenerator</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/Stukeley/PrimeNumberGenerator/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/Stukeley/PrimeNumberGenerator</RepositoryUrl>
+        <PackageTags>dotnet, streams, prime-numbers</PackageTags>
     </PropertyGroup>
 
 </Project>
